@@ -1,0 +1,190 @@
+<!DOCTYPE html><html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Component Wiki</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #111;
+    }header {
+  padding: 16px;
+  font-size: 14px;
+  text-align: left;
+  background: #ffffff;
+}
+
+.hero {
+  background: #d9d9d9;
+  height: 400px;
+  position: relative;
+}
+
+.hero-box {
+  position: absolute;
+  top: 80px;
+  right: 120px;
+  background: #1e1e1e;
+  color: white;
+  padding: 32px;
+  max-width: 320px;
+}
+
+.hero-box h1 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.hero-box a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.keyboards-section {
+  padding: 40px 20px 0;
+  text-align: left;
+}
+
+.keyboards-section h2 {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.keyboards-text {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.keyboards {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  gap: 24px;
+}
+
+.keyboards img {
+  height: 100px;
+}
+
+.intro-section {
+  padding: 60px 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.intro-section h2 {
+  font-size: 24px;
+  max-width: 400px;
+}
+
+.intro-section p {
+  font-size: 16px;
+  max-width: 500px;
+}
+
+.component {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 40px;
+}
+
+.component:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.component img {
+  max-width: 240px;
+  height: auto;
+}
+
+.component .text {
+  max-width: 400px;
+}
+
+.double {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.double .box {
+  width: 300px;
+  margin: 20px;
+}
+
+.double img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    Component Wiki
+  </header>  <section class="hero">
+    <div class="hero-box">
+      <h1>Збирай свій ПК — почни з правильного заліза</h1>
+      <a href="#">Читати більше →</a>
+    </div>
+  </section>  <section class="keyboards-section">
+    <h2>клавіатури →</h2>
+    <div class="keyboards-text"
+      <div class="keyboards">
+      <img src="keyboard1.webp" alt="Клавіатура 1">
+      <img src="keyboard2.webp" alt="Клавіатура 2">
+      <img src="keyboard3.webp" alt="Клавіатура 3">
+      </div>
+    </div>
+  </section>  <section class="intro-section">
+    <h2>Ласкаво просимо на Component Wiki — твій гід у світі комп’ютерних компонентів!</h2>
+    <p>На нашому сайті ти знайдеш усе, що потрібно, щоб зібрати власний комп’ютер або розібратись, як працює «залізо».
+    Ми зібрали детальну інформацію про основні компоненти ПК — від процесорів до відеокарт, від материнських плат до блоків живлення.</p>
+  </section>  <section class="component">
+    <img src="intel-amd.jpg" alt="CPU">
+    <div class="text">
+      <h3>Процесор (CPU) – мозок ПК</h3>
+      <p>Виконує всі обчислення, обробляє команди програм. Від нього залежить швидкість роботи системи.</p>
+    </div>
+  </section>  <section class="component">
+    <img src="GPU1.jpg" alt="GPU">
+    <div class="text">
+      <h3>Відеокарта (GPU)</h3>
+      <p>Інтегрована (вбудована в процесор) <br> Дискретна (окрема карта) — наприклад, NVIDIA, AMD</p>
+    </div>
+  </section>  <section class="double">
+    <div class="box">
+      <img src="kingstone RAM.jpg" alt="RAM">
+      <h3>Оперативна пам’ять (RAM)</h3>
+      <p>Тимчасово зберігає дані, з якими працює система під час увімкнення.</p>
+    </div>
+    <div class="box">
+      <img src="SSD.jpg" alt="HDD">
+      <h3>Накопичувачі (HDD / SSD)</h3>
+      <p>HDD (жорсткий диск): повільніший, дешевший<br>SSD (твердотільний): швидший, дорожчий</p>
+    </div>
+  </section>  <footer>
+    &copy; Component Wiki 2025
+  </footer>
+</body>
+</html>
